@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动态鲸鱼</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .whale {
+      width: 150px;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      border-radius: 50%;
+      animation: whaleSwim 2s ease-in-out infinite;
+    }
+    @keyframes whaleSwim {
+      0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="whale"></div>
+
+<script>
+  // 可选：可以使用JavaScript来实现更复杂的动画或交互效果
+</script>
+</body>
+</html>
